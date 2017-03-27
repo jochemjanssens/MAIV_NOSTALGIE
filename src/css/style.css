@@ -1,0 +1,7 @@
+@import 'reset';
+
+body {
+  font-family: Roboto;
+  font-size: 3rem;
+  margin: 2rem;
+}
