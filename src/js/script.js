@@ -1,13 +1,13 @@
-import React from 'react';
-import {render} from 'react-dom';
-import App from './containers/App';
+// import React from 'react';
+// import {render} from 'react-dom';
+// import App from './containers/App';
 
 const init = () => {
 
-  render(
-    <App />,
-    document.querySelector(`.react-mount`)
-  );
+  // render(
+  //   <App />,
+  //   document.querySelector(`.react-mount`)
+  // );
 
 };
 
