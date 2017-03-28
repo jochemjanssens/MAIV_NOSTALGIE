@@ -1,0 +1,13 @@
+@font-face {
+  font-family: DIN;
+  src: url(DIN-Regular.woff2) format('woff2'), url(DIN-Regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: DIN;
+  src: url(DIN-Medium.woff2) format('woff2'), url(DIN-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
