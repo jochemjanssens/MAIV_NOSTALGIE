@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 import Lyrics from '../components/Lyrics';
-import Musicplayer from '../components/Musicplayer';
 
 import data from '../data/data';
 
@@ -59,7 +58,6 @@ class App extends Component {
     return (
       <div className='lyrics-container'>
         <Lyrics lyricsText={lyricsText} />
-        <Musicplayer />
       </div>
     );
   }

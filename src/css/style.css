@@ -283,7 +283,7 @@ p {
 
   & .sexualhealing-img {
     border-bottom: .5rem solid var(--purple);
-    width: 50%;
+    width: 37%;
     height: 100%;
   }
 }
@@ -372,6 +372,46 @@ p {
 
   & .previousLyrics, & .nextLyrics {
     color: rgba(0, 0, 0, .4);
+  }
+}
+
+.lp {
+  animation: spin 2s infinite linear;
+}
+
+.naaldAnimation {
+  transform-origin: 90% 10%;
+  animation: rotation 1s ease forwards;
+}
+
+.sexualhealing-audio {
+  display: none;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(25deg);
+  }
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.plaat {
+  margin-top: 3rem;
+
+  & .plaat-tekst {
+    color: var(--purple);
+    font-weight: bold;
+    font-size: 2rem;
   }
 }
 
