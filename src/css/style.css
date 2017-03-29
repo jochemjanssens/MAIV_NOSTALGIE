@@ -121,11 +121,10 @@ p {
     margin: 0 3rem .4rem;
   }
 
-  & nav a {
-    text-decoration: none;
-    color: black;
+  & nav span {
     font-size: 2.5rem;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   & .header-social {
@@ -135,6 +134,22 @@ p {
 
   & .twitter-icon {
     margin-left: 5rem;
+  }
+}
+
+.header-mainnavigation {
+
+  & .home {
+    opacity: 1;
+  }
+
+  & span {
+    opacity: 0;
+    transition: opacity .5s;
+  }
+
+  & li:hover span {
+    opacity: 1;
   }
 }
 
