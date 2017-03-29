@@ -11,14 +11,15 @@
  import lp from '../js/lp.js';
  import wandelingNaam from '../js/wandelingNaam.js';
  import dvd from '../js/dvd.js';
+ import nav from '../js/nav.js';
 
  const init = () => {
-
    nostaglieRadio();
    dvd();
    lp();
    wandelingNaam();
    map();
+   nav();
    render(
      <App />,
      document.querySelector(`.lyrics-react`)
