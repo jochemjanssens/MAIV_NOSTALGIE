@@ -396,28 +396,21 @@ p {
 
 .naaldAnimation {
   transform-origin: 90% 10%;
-  animation: rotation 1s ease forwards;
 }
 
 .sexualhealing-audio {
   display: none;
 }
 
-@keyframes rotation {
+@keyframes spin {
+
   0% {
     transform: rotate(0deg);
   }
 
   100% {
-    transform: rotate(25deg);
+    transform: rotate(360deg);
   }
-}
-
-
-
-@keyframes spin {
-  0% { transform: rotate(0deg);}
-  100% { transform: rotate(360deg);}
 }
 
 .plaat {
@@ -757,6 +750,16 @@ p {
   .year p, .midnight .overlay-paragraph, .midnight .midnight-firstparagraph, .sexualhealing-verhaal p, .savedmylive p {
     font-size: 1.8rem;
     line-height: 3rem;
+  }
+
+  .lp-plaat {
+    width: 50%;
+    height: auto;
+  }
+
+  .naald {
+    width: 28%;
+    height: auto;
   }
 
   .nostalgie-player {
