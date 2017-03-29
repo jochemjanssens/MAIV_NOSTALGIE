@@ -28,4 +28,6 @@ const playHandler = () => {
   }
 };
 
-init();
+export default () => {
+  init();
+};
