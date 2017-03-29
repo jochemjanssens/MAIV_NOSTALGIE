@@ -17,4 +17,6 @@ const handlePlay = () => {
   console.log($nostalgieplayer);
 };
 
-init();
+export default () => {
+  init();
+};

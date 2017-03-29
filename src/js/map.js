@@ -61,5 +61,6 @@ const showOverlayethree = () => {
 };
 
 
-
-init();
+export default () => {
+  init();
+};
