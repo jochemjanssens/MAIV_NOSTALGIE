@@ -34,6 +34,15 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
   <audio name="media" class="nostalgieplayer" muted>
     <source src="http://nostalgiewhatafeeling.ice.infomaniak.ch/nostalgiewhatafeeling-128.mp3" type="audio/mpeg">
   </audio>
@@ -59,7 +68,9 @@
         <li><img src="assets/images/bol.svg" alt="bol icon" width="12" height="12"><a href="#"></a></li>
       </ul>
       <ul class="header-social">
-        <li><a href="#"><img src="assets/images/fb.svg" alt="fb" width="15" height="29"></a></li>
+        <li class="fb-share-button" data-href="www.facebook.be" data-layout="button" data-mobile-iframe="false">
+          <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A3000%2F&amp;src=sdkpreparse"></a>
+        </li>
         <li class="twitter-icon"><a href="#"><img src="assets/images/twitter.svg" alt="twitter" width="32" height="28"></a></li>
       </ul>
     </nav>
@@ -558,5 +569,4 @@
     </section>
   </main>
 </body>
-
 </html>

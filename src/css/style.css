@@ -483,29 +483,12 @@ p {
   justify-content: space-between;*/
 }
 
-.overlayhidden, .overlaytwohidden, .overlaythreehidden {
+.overlayhidden {
   visibility: hidden;
-  /*animation: fade 1s;*/
 }
-
-/*@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-
-  0% {
-    opacity: 0;
-  }
-}*/
 
 .lijnpos {
   position: absolute;
-  width: 100%;
-  height: auto;
   z-index: -99;
 }
 
