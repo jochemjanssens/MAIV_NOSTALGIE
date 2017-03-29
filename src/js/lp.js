@@ -1,6 +1,8 @@
 const naald = document.querySelector(`.naald`);
 const lp = document.querySelector(`.lp-plaat`);
 const sexualaudio = document.querySelector(`.sexualhealing-audio`);
+let isClicked = false;
+let lpAnimatie;
 
 
 const init = () => {
@@ -8,16 +10,69 @@ const init = () => {
 };
 
 const clickHandler = () => {
-  if (!naald.classList.contains(`naaldAnimation`)) {
-    naald.classList.add(`naaldAnimation`);
-    lp.classList.add(`lp`);
-    console.log(sexualaudio);
+  console.log(`entry ${isClicked}`);
+  if (isClicked === false) {
+    isClicked = true;
+    console.log(isClicked);
+    animateNaaldUp(naald);
+    animatePlaat(lp);
     sexualaudio.play();
   } else {
-    naald.classList.remove(`naaldAnimation`);
-    lp.classList.remove(`lp`);
+    isClicked = false;
+    lpAnimatie.pause();
     sexualaudio.pause();
+    animateNaaldDown(naald);
   }
+  console.log(`out ${isClicked}`);
+};
+
+const animateNaaldUp = naald => {
+  console.log(`u`);
+  naald.animate([
+    {
+      transform: `rotate(0deg)`
+    },
+    {
+      transform: `rotate(25deg)`
+    }
+  ],  {
+    duration: 500,
+    fill: `forwards`
+  });
+
+};
+
+const animateNaaldDown = naald => {
+  console.log(`d`);
+  naald.animate([
+    {
+      transform: `rotate(25deg)`
+    },
+    {
+      transform: `rotate(0deg)`
+    }
+  ],  {
+    duration: 500,
+    fill: `forwards`
+  });
+
+};
+
+
+const animatePlaat = lp => {
+  lpAnimatie = lp.animate([
+    {
+      transform: `rotate(0deg)`
+    },
+    {
+      transform: `rotate(360deg)`
+    }
+  ],  {
+    duration: 3000,
+    iterations: Infinity,
+    delay: 800
+  });
+
 };
 
 export default () => {
