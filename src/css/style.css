@@ -420,6 +420,18 @@ p {
     padding: 10rem;
   }
 
+  /*& .overlayone {
+    visibility: hidden;
+  }*/
+
+  /*& .overlaytwo{
+    visibility: hidden;
+  }
+
+  & .overlaythree {
+    visibility: hidden;
+  }*/
+
   & .overlay-content {
     width: 60%;
   }
@@ -446,13 +458,39 @@ p {
 }
 
 .midnight-kaart {
-  background-image: url(../assets/images/kaart.svg);
-  width: 100%;
-  height: 2320px;
+  /*background-image: url(../assets/images/kaart.svg);*/
+  /*width: 100%;
+  height: 222.8rem;
   position: relative;
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: space-between;*/
+}
+
+.overlayhidden, .overlaytwohidden, .overlaythreehidden {
+  visibility: hidden;
+  /*animation: fade 1s;*/
+}
+
+/*@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}*/
+
+.lijnpos {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -99;
 }
 
 /*YEAR*/
@@ -747,6 +785,7 @@ p {
   .midnight .overlay {
     justify-content: center;
     padding: 5rem;
+
   }
 
   .coverimg, .coverimg img, .sexualhealing-verhaal .coverimg-text {
