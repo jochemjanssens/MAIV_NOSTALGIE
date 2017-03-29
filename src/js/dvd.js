@@ -4,7 +4,6 @@ const dvdStart = document.querySelector(`.dvd-start`);
 const dvdTitles = document.querySelectorAll(`.dvd-tekst`);
 
 const init = () => {
-  console.log(playBtn);
   playBtn.addEventListener(`click`, playHandler);
 
 };

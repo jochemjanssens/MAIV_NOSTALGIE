@@ -156,7 +156,7 @@
             <source type="image/webp" srcset="assets/images/sexualhealing-lyrics.webp"/>
             <img src="assets/images/sexualhealing-lyrics.png"
                 srcset="assets/images/sexualhealing-lyrics.png 549w,
-                    aassets/images/sexualhealing-lyrics50.png 392w,
+                    assets/images/sexualhealing-lyrics50.png 392w,
                     assets/images/sexualhealing-lyrics25.png 195w"
                 sizes="549px"
                 width="549" height="676" alt='sexual healing img'>
@@ -171,6 +171,12 @@
               </header>
               <div class="lyrics-react">
 
+              </div>
+              <audio name='media' controls class='sexualhealing-audio'><source src='./assets/audio/sexualhealing.mp3' type='audio/mpeg' /></audio>
+              <div class="plaat">
+                <p class="plaat-tekst">Klik op de naald op de plaat af te spelen</p>
+                <img src="assets/images/plaat.png" alt="plaat" width="240" height="240" class="lp-plaat">
+                <img src="assets/svg/naald.svg" alt="naald" width="120" height="220" class="naald">
               </div>
           </article>
         </div>
@@ -277,7 +283,7 @@
         </h2>
         <form action="index.php" class="name-formulier">
           <label for="name">Gelieve je naam in te vullen</label>
-          <input type="text" id="name">
+          <input type="text" id="name" class="input">
         </form>
       </div>
       <section class="midnight-kaart">
@@ -434,7 +440,7 @@
         <section class="overlay overlayone overlayhidden">
           <div class="overlay-content">
             <header class="overlay-header">
-              <h2><span class="overlay-number">01/</span> Goedemorgen</h2>
+              <h2><span class="overlay-number">01/</span> Goedemorgen <span class="inputvalue"></span></h2>
             </header>
             <p class="overlay-paragraph">
               De Marvin Gaye wandeling is een heuse ‘Midnight Love Digital
@@ -536,7 +542,7 @@
             aan zijn dood. Er wordt een blik geworpen in zowel
             het muzikale als de intieme aspecten van zijn leven.
             Remember Marvin Gaye toont zeer mooi de overgang van
-            zijn slechte periode  in England tot aan zijn revival
+            zijn slechte periode in England tot aan zijn revival
             met Sexual Healing.
         </p>
         <p class="dvd-secondparagraph dvd-tekst">
