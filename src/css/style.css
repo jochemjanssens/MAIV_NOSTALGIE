@@ -359,6 +359,22 @@ p {
   }
 }
 
+.sexualhealing-lyrics {
+
+  & p {
+    margin: 2rem 0;
+    height: 6rem;
+  }
+
+  & .lyrics {
+    padding-top: 2rem;
+  }
+
+  & .previousLyrics, & .nextLyrics {
+    color: rgba(0, 0, 0, .4);
+  }
+}
+
 /*MIDNIGHT LOVE TOUR*/
 
 .midnight {

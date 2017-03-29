@@ -57,7 +57,7 @@ class App extends Component {
     const {lyricsText} = this.state;
 
     return (
-      <div>
+      <div className='lyrics-container'>
         <Lyrics lyricsText={lyricsText} />
         <Musicplayer />
       </div>

@@ -1,14 +1,15 @@
 import React, {PropTypes} from 'react';
 
-const LyricsItem = ({text}) => {
+const LyricsItem = ({text, className}) => {
 
   return (
-    <p>{text}</p>
+    <p className={className}>{text}</p>
   );
 };
 
 LyricsItem.propTypes = {
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired
 };
 
 export default LyricsItem;
