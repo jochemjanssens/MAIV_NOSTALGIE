@@ -1,14 +1,16 @@
-// import React from 'react';
-// import {render} from 'react-dom';
-// import App from './containers/App';
+/* eslint-disable react/jsx-filename-extension */
 
-const init = () => {
+ import React from 'react';
+ import {render} from 'react-dom';
+ import App from './containers/App';
 
-  // render(
-  //   <App />,
-  //   document.querySelector(`.react-mount`)
-  // );
+ const init = () => {
 
-};
+   render(
+     <App />,
+     document.querySelector(`.lyrics-react`)
+   );
 
-init();
+ };
+
+ init();
