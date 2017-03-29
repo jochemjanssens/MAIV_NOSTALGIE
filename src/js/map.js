@@ -40,11 +40,9 @@ const showOverlayeone = () => {
   if (window.scrollY > 7800 || window.scrollY < 7500) {
     overlayone.classList.add(`overlayhidden`);
   }
-  console.log(overlayone);
 };
 
 const showOverlayetwo = () => {
-  console.log(overlaytwo);
   if (window.scrollY >= 8400 || window.scroll <= 8600) {
     overlaytwo.classList.remove(`overlaytwohidden`);
   }

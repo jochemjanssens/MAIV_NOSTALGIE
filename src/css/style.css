@@ -569,14 +569,22 @@ p {
     font-size: 3rem;
     color: white;
     margin-bottom: 2rem;
+    margin-top: 3rem;
   }
 
   & .dvd-video {
-    display: none;
     z-index: 5;
     position: absolute;
     top: 20rem;
     left: calc(50% - 32rem);
+  }
+
+  & .dvd-hidden {
+    display: none;
+  }
+
+  & .dvd-tekst-hidden {
+    visibility: hidden;
   }
 }
 

@@ -1,5 +1,6 @@
 
 /* eslint-disable react/jsx-filename-extension */
+ import dvd from '../js/dvd.js';
  import map from '../js/map.js';
  import React from 'react';
  import {render} from 'react-dom';
@@ -9,6 +10,7 @@
 
  const init = () => {
    nostaglieRadio();
+   dvd();
    map();
    render(
      <App />,
