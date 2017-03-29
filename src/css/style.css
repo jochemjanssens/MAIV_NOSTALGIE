@@ -523,6 +523,8 @@ p {
 .lijnpos {
   position: absolute;
   z-index: -99;
+  width: 100%;
+  margin-top: -38rem;
 }
 
 /*YEAR*/
@@ -740,6 +742,10 @@ p {
   .lp-plaat {
     width: 50%;
     height: auto;
+  }
+
+  .sexualhealing-lyrics p {
+    height: 9rem;
   }
 
   .naald {
