@@ -309,15 +309,12 @@ p {
     }
   }
 
-  & .verhaal-firstsection {
-    background: linear-gradient(white 37%, var(--yellow-trans) 37%, var(--yellow-trans) 86%, white 86%);
-  }
-
   & .verhaal-firstsection-container {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    padding-top: 7rem;
   }
 
   & .verhaal-firstparagraph {
@@ -328,8 +325,13 @@ p {
     width: 80%;
   }
 
+  & .verhaal-secondparagraph {
+    background-color: var(--yellow-trans);
+    padding: 3rem;
+  }
+
   & .verhaal-secondparagraph .text-highlight {
-    background: linear-gradient(transparent 50%, var(trans-white) 50%);
+    background: linear-gradient(transparent 50%, var(--trans-white) 50%);
   }
 
   & .quote {
@@ -612,8 +614,8 @@ p {
   }
 
   .sexualhealing-verhaal .verhaal-secondparagraph {
-    margin-left: -10rem;
-    width: 100%;
+    margin-left: -21rem;
+    width: 114%;
   }
 
   .verhaal-image img {
@@ -754,12 +756,14 @@ p {
 
   .sexualhealing-verhaal .verhaal-firstsection-container {
     flex-flow: column;
+    padding-top: 7rem;
   }
 
   .sexualhealing-verhaal .verhaal-secondparagraph {
     margin-left: 0;
     background-color: var(--yellow-trans);
     padding: 1rem 2rem;
+    width: 100%;
   }
 
   .sexualhealing-verhaal .verhaal-firstparagraph {
