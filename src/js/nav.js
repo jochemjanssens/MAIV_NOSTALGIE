@@ -18,5 +18,4 @@ const clickHandler = e => {
 
 export default () => {
   init();
-  console.log(`halo`);
 };
