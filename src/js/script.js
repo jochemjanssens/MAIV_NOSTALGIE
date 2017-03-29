@@ -4,7 +4,6 @@
  import React from 'react';
  import {render} from 'react-dom';
  import App from './containers/App';
-
  import nostaglieRadio from '../js/nostaglieRadio.js';
 
  const init = () => {
@@ -14,7 +13,6 @@
      <App />,
      document.querySelector(`.lyrics-react`)
    );
-
  };
 
  init();
