@@ -11,7 +11,7 @@ const init = () => {
 const playHandler = () => {
   if (dvd.classList.contains(`dvd-hidden`)) {
     dvd.classList.remove(`dvd-hidden`);
-    dvdStart.innerHTML = `Stop de documentaire`;
+    dvdStart.innerHTML = `Toon me de tekst`;
     playBtn.src = `assets/svg/dvdstop.svg`;
 
     dvdTitles.forEach(dvdtitle => {
