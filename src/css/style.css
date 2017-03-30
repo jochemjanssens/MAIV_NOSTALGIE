@@ -145,6 +145,8 @@ p {
 
 .header-mainnavigation {
 
+  width: 42rem;
+
   & .menuitem-home {
     opacity: 1;
   }
@@ -784,6 +786,10 @@ p {
 
 @media (width < 780px) {
 
+  .header-title {
+    margin-top: 14rem;
+  }
+
   .equilizer {
     display: none;
   }
@@ -831,7 +837,7 @@ p {
   }
 
   .header nav {
-    visibility: hidden;
+    display: none;
     margin-top: 0;
   }
 
@@ -993,6 +999,10 @@ p {
 
   .savedmylive-header, .savedmylive-fourthparagraph, .sexualhealing-verhaal .verhaal-firstparagraph, .midnight .midnight-header,.dvd .dvd-header {
     margin: 6rem 0;
+  }
+
+  .header-title {
+    margin-top: 1em;
   }
 }
 
