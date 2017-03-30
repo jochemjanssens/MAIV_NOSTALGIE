@@ -4,7 +4,8 @@
 
  import React from 'react';
  import {render} from 'react-dom';
- import App from './containers/App';
+ import LyricsApp from './containers/LyricsApp';
+ import CoverApp from './containers/CoverApp';
 
  import nostaglieRadio from '../js/nostaglieRadio.js';
  import map from '../js/map.js';
@@ -21,8 +22,12 @@
    map();
    nav();
    render(
-     <App />,
+     <LyricsApp />,
      document.querySelector(`.lyrics-react`)
+   );
+   render(
+     <CoverApp />,
+     document.querySelector(`.coverimg`)
    );
  };
 
