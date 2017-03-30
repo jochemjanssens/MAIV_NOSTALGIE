@@ -20,56 +20,67 @@ const init = () => {
 
 const onScroll = () => {
   drawLine();
-  showOverlayeone();
-  showOverlayetwo();
-  showOverlayethree();
+  calculatePoints();
+};
+
+const calculatePoints = () => {
+  const hoogtemidnight = document.querySelector(`.midnight-kaart`).offsetHeight;
+  const startpunt01 = window.innerHeight / 2;
+  const eindpunt01 = (window.innerHeight / 2) - (document.querySelector(`.overlayone`).offsetHeight);
+
+  const startpunt02 = - ((hoogtemidnight / 2) - document.querySelector(`.overlaytwo`).offsetHeight);
+  const eindpunt02 = startpunt02 - (document.querySelector(`.overlaytwo`).offsetHeight) + 200;
+
+  const startpunt03 = - hoogtemidnight + (document.querySelector(`.overlaythree`).offsetHeight * 1.5);
+  const eindpunt03 = - hoogtemidnight + (document.querySelector(`.overlaythree`).offsetHeight / 2);
+
+  showOverlayOne($overlayone, startpunt01, eindpunt01);
+  showOverlayTwo($overlaytwo, startpunt02, eindpunt02);
+  showOverlayThree($overlaythree, startpunt03, eindpunt03);
 };
 
 const drawLine = () => {
-
-  //console.log($midnightkaart.top);
   const totalHeight = document.body.scrollHeight - window.innerHeight - startPos;
   const position = window.scrollY - startPos;
   progress = (position / totalHeight)  / 0.6;
   lijn.style.strokeDasharray = `${length * progress} ${length}`;
 };
 
-const showOverlayeone = () => {
+const showOverlayOne = (item, start, stop) => {
   const $midnightkaart = document.querySelector(`.midnight-kaart`).getBoundingClientRect();
-  console.log($midnightkaart.top);
-  if ($midnightkaart.top <= 340) {
-    $overlayone.classList.remove(`overlayhidden`);
-    animateOverlay($overlayone, elementVisible1);
+  if ($midnightkaart.top <= start) {
+    item.classList.remove(`overlayhidden`);
+    animateOverlay(item, elementVisible1);
     elementVisible1 = true;
   }
-  if ($midnightkaart.top >= - 10) {
-    $overlayone.classList.add(`overlayhidden`);
+  if ($midnightkaart.top <= stop || $midnightkaart.top >= start) {
+    item.classList.add(`overlayhidden`);
+    elementVisible1 = false;
+  }
+};
+
+const showOverlayTwo = (item, start, stop) => {
+  const $midnightkaart = document.querySelector(`.midnight-kaart`).getBoundingClientRect();
+  if ($midnightkaart.top <= start) {
+    item.classList.remove(`overlayhidden`);
+    animateOverlay(item, elementVisible2);
+    elementVisible2 = true;
+  }
+  if ($midnightkaart.top <= stop || $midnightkaart.top >= start) {
+    item.classList.add(`overlayhidden`);
     elementVisible2 = false;
   }
 };
 
-const showOverlayetwo = () => {
+const showOverlayThree = (item, start, stop) => {
   const $midnightkaart = document.querySelector(`.midnight-kaart`).getBoundingClientRect();
-  if ($midnightkaart.top <= - 270) {
-    $overlayone.classList.remove(`overlayhidden`);
-    animateOverlay($overlayone, elementVisible2);
-    elementVisible1 = true;
+  if ($midnightkaart.top <= start) {
+    item.classList.remove(`overlayhidden`);
+    animateOverlay(item, elementVisible3);
+    elementVisible3 = true;
   }
-  if ($midnightkaart.top >= - 570) {
-    $overlaytwo.classList.add(`overlayhidden`);
-    elementVisible2 = false;
-  }
-};
-
-const showOverlayethree = () => {
-  const $midnightkaart = document.querySelector(`.midnight-kaart`).getBoundingClientRect();
-  if ($midnightkaart.top <= - 800) {
-    $overlayone.classList.remove(`overlayhidden`);
-    animateOverlay($overlayone, elementVisible3);
-    elementVisible1 = true;
-  }
-  if ($midnightkaart.top >= - 1000) {
-    $overlaythree.classList.add(`overlayhidden`);
+  if ($midnightkaart.top <= stop || $midnightkaart.top >= start) {
+    item.classList.add(`overlayhidden`);
     elementVisible3 = false;
   }
 };
