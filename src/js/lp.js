@@ -23,11 +23,9 @@ const clickHandler = () => {
     sexualaudio.pause();
     animateNaaldDown(naald);
   }
-  console.log(`out ${isClicked}`);
 };
 
 const animateNaaldUp = naald => {
-  console.log(`u`);
   naald.animate([
     {
       transform: `rotate(0deg)`

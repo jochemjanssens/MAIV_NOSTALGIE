@@ -12,7 +12,6 @@
  import wandelingNaam from '../js/wandelingNaam.js';
  import dvd from '../js/dvd.js';
  import nav from '../js/nav.js';
- import audiofancyness from '../js/audiofancyness.js';
 
  const init = () => {
    nostaglieRadio();
@@ -21,7 +20,6 @@
    wandelingNaam();
    map();
    nav();
-   audiofancyness();
    render(
      <App />,
      document.querySelector(`.lyrics-react`)

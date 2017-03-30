@@ -749,6 +749,10 @@ p {
 
 @media (width < 780px) {
 
+  .equilizer {
+    display: none;
+  }
+
   .year p, .midnight .overlay-paragraph, .midnight .midnight-firstparagraph, .sexualhealing-verhaal p, .savedmylive p {
     font-size: 1.8rem;
     line-height: 3rem;
