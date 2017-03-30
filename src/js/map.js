@@ -32,7 +32,6 @@ const drawLine = () => {
 };
 
 const showOverlayeone = () => {
-  console.log(window.scrollY);
   if (window.scrollY >= 7700 && window.scrollY <= 8000) {
     $overlayone.classList.remove(`overlayhidden`);
     animateOverlay($overlayone, elementVisible1);

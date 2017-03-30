@@ -109,46 +109,52 @@ p {
 
   & nav {
     margin-top: 3rem;
+
+    & .inactive {
+      margin-left: 2.7rem;
+    }
   }
 
   & nav li {
     display: flex;
     align-items: center;
-    margin: 1.5rem 0 1.5rem 6rem;
-  }
-
-  & nav img {
-    margin: 0 3rem .4rem;
+    margin: 1.5rem 0;
   }
 
   & nav span {
     font-size: 2.5rem;
     text-transform: uppercase;
     cursor: pointer;
+    padding-left: 2rem;
   }
+}
 
-  & .header-social {
-    border-top: .3rem solid black;
-    width: 14rem;
+.header-social {
+
+  border-top: .3rem solid black;
+  width: 14rem;
+
+  & li {
+    padding-left: 2.5rem;
   }
 
   & .twitter-icon {
-    margin-left: 5rem;
+    padding-left: 2rem;
   }
 }
 
 .header-mainnavigation {
 
-  & .home {
+  & .menuitem-home {
     opacity: 1;
   }
 
-  & span {
-    opacity: 0;
+  & li {
+    opacity: .15;
     transition: opacity .5s;
   }
 
-  & li:hover span {
+  & li:hover {
     opacity: 1;
   }
 }
