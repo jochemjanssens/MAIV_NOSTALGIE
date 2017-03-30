@@ -213,7 +213,7 @@ p {
 
   & .years-text {
     font-weight: 500;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     align-self: flex-end;
   }
 }
@@ -559,6 +559,7 @@ p {
   color: var(--purple);
   display: flex;
   justify-content: center;
+  font-size: 3.5rem;
 }
 
 .wandeling-confirmatio-hidden {
@@ -594,6 +595,12 @@ p {
 .yearimg-picture {
   display: flex;
   width: 500%;
+}
+
+.cover-title {
+  color: var(--purple);
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 /* DVD */
@@ -634,7 +641,8 @@ p {
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin: 10rem 0;
+    margin-bottom: 3rem;
+    margin-top: 12rem;
   }
 
   & .dvd-controls-title {
@@ -648,7 +656,8 @@ p {
     z-index: 5;
     position: absolute;
     top: 20rem;
-    left: calc(50% - 32rem);
+    width: 80%;
+    margin-left: 10%;
   }
 
   & .dvd-hidden {
@@ -733,6 +742,10 @@ p {
     width: 100%;
     height: auto;
   }
+
+  .dvd .dvd-controls-title {
+    margin-top: -11rem;
+  }
 }
 
 @media (width < 902px) {
@@ -781,6 +794,12 @@ p {
     width: 60%;
     margin-top: 3rem;
     align-self: flex-end;
+    position: relative;
+    bottom: -3rem;
+  }
+
+  .dvd .dvd-controls-title {
+    margin-top: 1rem;
   }
 }
 
@@ -882,6 +901,10 @@ p {
 
 @media (width < 600px) {
 
+  .lyrics-header, .verhaal-header {
+    font-size: 2.8rem;
+  }
+
   .year {
     flex-flow: column;
   }
@@ -979,6 +1002,7 @@ p {
 
   .yearimg-picture {
     width: 100%;
+    margin-top: -7rem;
   }
 
   .midnight .overlay-number {
@@ -997,12 +1021,22 @@ p {
     display: none;
   }
 
-  .savedmylive-header, .savedmylive-fourthparagraph, .sexualhealing-verhaal .verhaal-firstparagraph, .midnight .midnight-header,.dvd .dvd-header {
+  .savedmylive-header, .savedmylive-fourthparagraph, .sexualhealing-verhaal .verhaal-firstparagraph, .midnight .midnight-header {
     margin: 6rem 0;
+    font-size: 2.2rem;
+  }
+
+  .dvd .dvd-header {
+    font-size: 2.2rem;
   }
 
   .header-title {
     margin-top: 1em;
+  }
+
+  .dvd .dvd-controls {
+    padding: 1rem 0 5rem;
+    margin: 0;
   }
 }
 
@@ -1016,11 +1050,6 @@ p {
     border: none;
   }
 
-  .dvd .dvd-controls {
-    padding: 1rem 0 5rem;
-    margin: 0;
-  }
-
   .year {
     margin: 8rem 0 0 10%;
   }
@@ -1029,8 +1058,12 @@ p {
     margin-left: .5rem;
   }
 
-  .text-header {
-    font-size: 2.2rem;
+  .text-header .dvd-tekst {
+    font-size: 2rem;
+  }
+
+  .dvd .dvd-header .dvd-tekst {
+    font-size: 1.8rem;
   }
 
   .midnight .midnight-intro {
@@ -1039,6 +1072,10 @@ p {
 
   .midnight .name-formulier input {
     width: 80%;
+  }
+
+  .dvd .dvd-video {
+    top: 48rem;
   }
 }
 

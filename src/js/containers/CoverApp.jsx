@@ -7,15 +7,15 @@ class CoverApp extends Component {
   state = {
     imageData: [
       {
-        title: `De cover van Sexual Healing`,
+        title: `Sexual Healing`,
         filename: `cover-sexualhealing`
       },
       {
-        title: `De cover van Ain't no mountain high enough`,
+        title: `Ain't no mountain high enough`,
         filename: `cover-aintnomountian`
       },
       {
-        title: `De cover van Midnight Love`,
+        title: `Midnight Love`,
         filename: `cover-midnightlove`
       }
     ],
@@ -37,7 +37,7 @@ class CoverApp extends Component {
 
     return (
       <div onClick={handleClick}>
-        <p>Klik om de foto om andere covers te ontdekken</p>
+        <p className='cover-title'>Klik om de foto om andere covers te ontdekken</p>
         <Picture filename={imageData[currentId].filename} />
         <PictureTitle title={imageData[currentId].title} />
       </div>
