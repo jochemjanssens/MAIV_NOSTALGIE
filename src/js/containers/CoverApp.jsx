@@ -12,11 +12,11 @@ class CoverApp extends Component {
       },
       {
         title: `De cover van Ain't no mountain high enough`,
-        filename: `cover-sexualhealing`
+        filename: `cover-aintnomountian`
       },
       {
         title: `De cover van Midnight Love`,
-        filename: `cover-sexualhealing`
+        filename: `cover-midnightlove`
       }
     ],
     currentId: 0
