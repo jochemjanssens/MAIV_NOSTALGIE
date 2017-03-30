@@ -542,6 +542,18 @@ p {
   margin-top: -38rem;
 }
 
+.wandeling-confirmation {
+  margin-top: 4rem;
+  font-weight: bold;
+  color: var(--purple);
+  display: flex;
+  justify-content: center;
+}
+
+.wandeling-confirmatio-hidden {
+  visibility: hidden;
+}
+
 /*YEAR*/
 
 .year {
