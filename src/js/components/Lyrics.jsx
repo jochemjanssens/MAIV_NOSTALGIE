@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import LyricsItem from '../components/LyricsItem';
 
 const Lyrics = ({lyricsText}) => {
@@ -12,7 +12,7 @@ const Lyrics = ({lyricsText}) => {
 };
 
 Lyrics.propTypes = {
-  lyricsText: Array.isRequired
+  lyricsText: PropTypes.array.isRequired
 };
 
 export default Lyrics;

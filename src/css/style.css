@@ -543,7 +543,6 @@ p {
   position: absolute;
   z-index: -99;
   width: 100%;
-  margin-top: -38rem;
 }
 
 .wandeling-confirmation {
@@ -650,6 +649,20 @@ p {
 
   & .dvd-tekst-hidden {
     visibility: hidden;
+  }
+}
+
+@media (width < 1439px) {
+
+  .lijnpos {
+    display: none;
+  }
+
+  .midnight-kaart {
+    background-image: url(../assets/svg/kaart_responsive.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 }
 

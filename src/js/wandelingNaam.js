@@ -20,14 +20,20 @@ const submitHandler = e => {
 
 const showDate = () => {
   const currentTime = date.getHours();
-  if (currentTime >= 0 && currentTime <= 10) {
+  if (currentTime >= 0 && currentTime <= 8) {
     tijdsaanduiding.innerHTML = `Goedemorgen`;
   }
-  else if (currentTime >= 11 && currentTime <= 13) {
+  else if (currentTime >= 9 && currentTime <= 11) {
+    tijdsaanduiding.innerHTML = `Goede voormiddag`;
+  }
+  else if (currentTime >= 12 && currentTime <= 14) {
     tijdsaanduiding.innerHTML = `Goedemiddag`;
   }
-  else if (currentTime >= 14 && currentTime <= 24) {
-    tijdsaanduiding.innerHTML = `Goedeavond`;
+  else if (currentTime >= 15 && currentTime <= 17) {
+    tijdsaanduiding.innerHTML = `Goede namiddag`;
+  }
+  else if (currentTime >= 17 && currentTime <= 24) {
+    tijdsaanduiding.innerHTML = `Goedenavond`;
   }
 };
 

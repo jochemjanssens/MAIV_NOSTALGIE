@@ -2,6 +2,7 @@ const $overlayone = document.querySelector(`.overlayone`);
 const $overlaytwo = document.querySelector(`.overlaytwo`);
 const $overlaythree = document.querySelector(`.overlaythree`);
 
+
 const lijn = document.querySelector(`.lijn`);
 let progress = 0;
 let length;
@@ -25,6 +26,8 @@ const onScroll = () => {
 };
 
 const drawLine = () => {
+
+  //console.log($midnightkaart.top);
   const totalHeight = document.body.scrollHeight - window.innerHeight - startPos;
   const position = window.scrollY - startPos;
   progress = (position / totalHeight)  / 0.6;
@@ -32,37 +35,40 @@ const drawLine = () => {
 };
 
 const showOverlayeone = () => {
-  console.log(window.scrollY);
-  if (window.scrollY >= 7700 && window.scrollY <= 8000) {
+  const $midnightkaart = document.querySelector(`.midnight-kaart`).getBoundingClientRect();
+  console.log($midnightkaart.top);
+  if ($midnightkaart.top <= 340) {
     $overlayone.classList.remove(`overlayhidden`);
     animateOverlay($overlayone, elementVisible1);
     elementVisible1 = true;
   }
-  if (window.scrollY > 8000 || window.scrollY < 7700) {
-    elementVisible1 = false;
+  if ($midnightkaart.top >= - 10) {
     $overlayone.classList.add(`overlayhidden`);
+    elementVisible2 = false;
   }
 };
 
 const showOverlayetwo = () => {
-  if (window.scrollY >= 8200 && window.scrollY <= 8800) {
-    $overlaytwo.classList.remove(`overlayhidden`);
-    animateOverlay($overlaytwo, elementVisible2);
-    elementVisible2 = true;
+  const $midnightkaart = document.querySelector(`.midnight-kaart`).getBoundingClientRect();
+  if ($midnightkaart.top <= - 270) {
+    $overlayone.classList.remove(`overlayhidden`);
+    animateOverlay($overlayone, elementVisible2);
+    elementVisible1 = true;
   }
-  if (window.scrollY > 8800 || window.scrollY < 8200) {
+  if ($midnightkaart.top >= - 570) {
     $overlaytwo.classList.add(`overlayhidden`);
     elementVisible2 = false;
   }
 };
 
 const showOverlayethree = () => {
-  if (window.scrollY >= 9100 && window.scrollY <= 9500) {
-    $overlaythree.classList.remove(`overlayhidden`);
-    animateOverlay($overlaythree, elementVisible3);
-    elementVisible3 = true;
+  const $midnightkaart = document.querySelector(`.midnight-kaart`).getBoundingClientRect();
+  if ($midnightkaart.top <= - 800) {
+    $overlayone.classList.remove(`overlayhidden`);
+    animateOverlay($overlayone, elementVisible3);
+    elementVisible1 = true;
   }
-  if (window.scrollY > 9500 || window.scrollY < 9100) {
+  if ($midnightkaart.top >= - 1000) {
     $overlaythree.classList.add(`overlayhidden`);
     elementVisible3 = false;
   }
