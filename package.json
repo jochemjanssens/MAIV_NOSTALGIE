@@ -43,6 +43,7 @@
     "url-loader": "^0.5.7",
     "webpack": "^2.2.0",
     "webpack-config-htmls": "^1.0.1",
+    "webpack-config-utils": "^2.3.0",
     "webpack-dev-server": "beta"
   }
 }
