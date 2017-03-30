@@ -32,36 +32,37 @@ const drawLine = () => {
 };
 
 const showOverlayeone = () => {
-  if (window.scrollY >= 7500 && window.scrollY <= 7800) {
+  console.log(window.scrollY);
+  if (window.scrollY >= 7700 && window.scrollY <= 8000) {
     $overlayone.classList.remove(`overlayhidden`);
     animateOverlay($overlayone, elementVisible1);
     elementVisible1 = true;
   }
-  if (window.scrollY > 7800 || window.scrollY < 7500) {
+  if (window.scrollY > 8000 || window.scrollY < 7700) {
     elementVisible1 = false;
     $overlayone.classList.add(`overlayhidden`);
   }
 };
 
 const showOverlayetwo = () => {
-  if (window.scrollY >= 8400 && window.scrollY <= 8600) {
+  if (window.scrollY >= 8200 && window.scrollY <= 8800) {
     $overlaytwo.classList.remove(`overlayhidden`);
     animateOverlay($overlaytwo, elementVisible2);
     elementVisible2 = true;
   }
-  if (window.scrollY > 8600 || window.scrollY < 8400) {
+  if (window.scrollY > 8800 || window.scrollY < 8200) {
     $overlaytwo.classList.add(`overlayhidden`);
     elementVisible2 = false;
   }
 };
 
 const showOverlayethree = () => {
-  if (window.scrollY >= 9000 && window.scrollY <= 9300) {
+  if (window.scrollY >= 9100 && window.scrollY <= 9500) {
     $overlaythree.classList.remove(`overlayhidden`);
     animateOverlay($overlaythree, elementVisible3);
     elementVisible3 = true;
   }
-  if (window.scrollY > 9300 || window.scrollY < 9000) {
+  if (window.scrollY > 9500 || window.scrollY < 9100) {
     $overlaythree.classList.add(`overlayhidden`);
     elementVisible3 = false;
   }
