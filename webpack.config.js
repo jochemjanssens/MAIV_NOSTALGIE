@@ -16,7 +16,7 @@ const extractCSS = new ExtractTextWebpackPlugin(`css/style.css`);
 const AppCachePlugin = require(`appcache-webpack-plugin`);
 
 // change for production build on different server path
-const publicPath = `/`;
+const publicPath = `http://student.howest.be/jochem.janssens/20162017/ma4/tribute/`;
 
 const port = 3000;
 

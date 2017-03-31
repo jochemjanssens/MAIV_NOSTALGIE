@@ -48,12 +48,13 @@ const drawLine = () => {
 
 const showOverlayOne = (item, start, stop) => {
   const $midnightkaart = document.querySelector(`.midnight-kaart`).getBoundingClientRect();
-  if ($midnightkaart.top <= start) {
+  if ($midnightkaart.top <= start && $midnightkaart.top >= stop) {
     item.classList.remove(`overlayhidden`);
     animateOverlay(item, elementVisible1);
     elementVisible1 = true;
   }
   if ($midnightkaart.top <= stop || $midnightkaart.top >= start) {
+    animateOverlayOut(item, elementVisible1);
     item.classList.add(`overlayhidden`);
     elementVisible1 = false;
   }
@@ -61,12 +62,13 @@ const showOverlayOne = (item, start, stop) => {
 
 const showOverlayTwo = (item, start, stop) => {
   const $midnightkaart = document.querySelector(`.midnight-kaart`).getBoundingClientRect();
-  if ($midnightkaart.top <= start) {
+  if ($midnightkaart.top <= start && $midnightkaart.top >= stop) {
     item.classList.remove(`overlayhidden`);
     animateOverlay(item, elementVisible2);
     elementVisible2 = true;
   }
   if ($midnightkaart.top <= stop || $midnightkaart.top >= start) {
+    animateOverlayOut(item, elementVisible2);
     item.classList.add(`overlayhidden`);
     elementVisible2 = false;
   }
@@ -74,12 +76,13 @@ const showOverlayTwo = (item, start, stop) => {
 
 const showOverlayThree = (item, start, stop) => {
   const $midnightkaart = document.querySelector(`.midnight-kaart`).getBoundingClientRect();
-  if ($midnightkaart.top <= start) {
+  if ($midnightkaart.top <= start && $midnightkaart.top >= stop) {
     item.classList.remove(`overlayhidden`);
     animateOverlay(item, elementVisible3);
     elementVisible3 = true;
   }
   if ($midnightkaart.top <= stop || $midnightkaart.top >= start) {
+    animateOverlayOut(item, elementVisible3);
     item.classList.add(`overlayhidden`);
     elementVisible3 = false;
   }
@@ -91,6 +94,16 @@ const animateOverlay = ($el, visible) => {
       opacity: [0, 1]
     },
      500
+    );
+  }
+};
+
+const animateOverlayOut = ($el, visible) => {
+  if (visible === true) {
+    $el.animate({
+      opacity: [1, 0]
+    },
+     250
     );
   }
 };

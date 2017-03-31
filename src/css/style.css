@@ -9,8 +9,12 @@
 
 html {
   font-size: 62.5%;
-  font-family: DIN, arial, sans-serif;
+  font-family: sans-serif;
   animation: fade-in 2s;
+}
+
+.wf-active {
+  font-family: DIN, arial, sans-serif;
 }
 
 @keyframes fade-in {
@@ -538,7 +542,7 @@ p {
 }
 
 .overlayhidden {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .lijnpos {
@@ -806,6 +810,10 @@ p {
   .savedmylive .savedmylive-fourthparagraph {
     width: 100%;
   }
+}
+
+.overlay-content video::-webkit-media-controls-fullscreen-button {
+  display: none;
 }
 
 @media (width < 780px) {
