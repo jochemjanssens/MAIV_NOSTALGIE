@@ -660,6 +660,13 @@ p {
   }
 }
 
+@media (width > 1780px) {
+
+  .header {
+    background-position: left center;
+  }
+}
+
 @media (width < 1439px) {
 
   .lijnpos {
@@ -667,7 +674,7 @@ p {
   }
 
   .midnight-kaart {
-    background-image: url(../assets/svg/kaart_responsive.svg);
+    background-image: url(../assets/svg/kaart_responsive.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -782,6 +789,10 @@ p {
     margin-top: 3rem;
     align-self: flex-end;
   }
+
+  .savedmylive .savedmylive-fourthparagraph {
+    width: 100%;
+  }
 }
 
 @media (width < 780px) {
@@ -878,6 +889,14 @@ p {
   .savedmylive .quote {
     align-self: auto;
   }
+
+  .sexualhealing-verhaal .verhaal-header {
+    justify-content: flex-start;
+
+    & h2 {
+      width: 100%;
+    }
+  }
 }
 
 @media (width < 600px) {
@@ -965,6 +984,15 @@ p {
     font-size: 2.4rem;
     width: 100%;
   }
+
+  .sexualhealing-flex .lyrics-content {
+    width: 75%;
+  }
+
+  .lyrics p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
 }
 
 @media (width < 480px) {
@@ -973,8 +1001,12 @@ p {
     font-size: 2.5rem;
   }
 
-  .savedmylive-fourthparagraph {
+  .savedmylive .savedmylive-text {
     width: 100%;
+  }
+
+  .savedmylive .savedmylive-thirdparagraph, .savedmylive-fifthparagraph .savedmylive-text {
+    width: 90%;
   }
 
   .yearimg-picture {
@@ -1039,6 +1071,10 @@ p {
 
   .midnight .name-formulier input {
     width: 80%;
+  }
+
+  .sexualhealing-verhaal .verhaal-thirdparagraph, .sexualhealing-verhaal .verhaal-fourthparagraph {
+    width: 100%;
   }
 }
 

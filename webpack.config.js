@@ -13,6 +13,8 @@ const {ifProduction, ifDevelopment} = getIfUtils(process.env.NODE_ENV);
 
 const extractCSS = new ExtractTextWebpackPlugin(`css/style.css`);
 
+const AppCachePlugin = require(`appcache-webpack-plugin`);
+
 // change for production build on different server path
 const publicPath = `/`;
 
@@ -56,7 +58,6 @@ const config = {
     contentBase: `./src`,
     historyApiFallback: true, // react-router
     hot: true,
-
 
     port
 
@@ -179,5 +180,16 @@ const config = {
   ])
 
 };
+
+
+const appCache = new AppCachePlugin({
+  cache: [`./assets/images/intro.webp`, `./assets/images/logo.svg`, `./assets/images/pijl.svg`],
+  network: [`*`],
+  settings: [`prefer-online`],
+  exclude: [/.*\.js$/, /.*\.js.map$/],  // Exclude file.txt and all .js files
+  output: `manifest.appcache`
+});
+
+config.plugins = [...config.plugins, appCache];
 
 module.exports = config;

@@ -11,7 +11,7 @@ class CoverApp extends Component {
         filename: `cover-sexualhealing`
       },
       {
-        title: `De cover van Ain't no mountain high enough`,
+        title: `Ain't no mountain high enough`,
         filename: `cover-aintnomountian`
       },
       {
