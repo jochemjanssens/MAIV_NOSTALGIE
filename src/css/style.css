@@ -673,7 +673,7 @@ p {
   }
 
   .midnight-kaart {
-    background-image: url(../assets/svg/kaart_responsive.png);
+    background-image: url(../assets/svg/kaart_responsive.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
