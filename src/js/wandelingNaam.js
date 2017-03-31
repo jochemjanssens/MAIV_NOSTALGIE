@@ -5,6 +5,7 @@ const date = new Date();
 
 const init = () => {
   form.addEventListener(`focusout`, submitHandler);
+  form.addEventListener(`submit`, submitHandler);
   showDate();
 };
 

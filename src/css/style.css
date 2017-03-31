@@ -103,7 +103,7 @@ p {
   border: 2.5rem solid black;
   display: flex;
   flex-flow: column;
-  background-image: url(../assets/images/header.png);
+  background-image: url(../assets/images/header.jpg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -266,7 +266,7 @@ p {
 
   & .img-item {
     border-bottom: .5rem solid var(--purple);
-    height: 58rem;
+    height: 62.2rem;
   }
 }
 
@@ -382,7 +382,7 @@ p {
     color: white;
     width: 100%;
     padding-left: 1rem;
-    bottom: 3.2rem;
+    bottom: 3.8rem;
   }
 }
 
@@ -522,6 +522,10 @@ p {
     font-size: 4rem;
     color: white;
     margin-left: -10.5rem;
+
+    & .tijdsaanduiding {
+      font-size: 2.6rem;
+    }
   }
 
   & .overlay-paragraph {
@@ -673,7 +677,7 @@ p {
   }
 
   .midnight-kaart {
-    background-image: url(../assets/svg/kaart_responsive.png);
+    background-image: url(../assets/svg/kaart_responsive.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -819,6 +823,10 @@ p {
     line-height: 3rem;
   }
 
+  .sexualhealing-verhaal .coverimg-text {
+    bottom: 3.2rem;
+  }
+
   .lp-plaat {
     width: 50%;
     height: auto;
@@ -904,6 +912,14 @@ p {
 
     & h2 {
       width: 100%;
+    }
+  }
+
+  .overlaytwo .overlay-content {
+    width: 100%;
+
+    & .overlay-header {
+      margin-left: 0;
     }
   }
 }
@@ -1045,7 +1061,6 @@ p {
 
   .savedmylive-header, .savedmylive-fourthparagraph, .sexualhealing-verhaal .verhaal-firstparagraph, .midnight .midnight-header {
     margin: 6rem 0;
-    font-size: 2.2rem;
   }
 
   .dvd .dvd-header {
@@ -1059,6 +1074,10 @@ p {
   .dvd .dvd-controls {
     padding: 1rem 0 5rem;
     margin: 0;
+  }
+
+  .wandeling-confirmation {
+    font-size: 2.5rem;
   }
 }
 
@@ -1102,6 +1121,18 @@ p {
 
   .dvd .dvd-video {
     top: 48rem;
+  }
+
+  .sexualhealing-verhaal .coverimg-text {
+    padding-left: .4rem;
+  }
+
+  .coverimg, .coverimg img, .sexualhealing-verhaal .coverimg-text {
+    width: 100%;
+  }
+
+  .year-header .title-underline, .lyrics-header .title-underline, .verhaal-header .title-underline {
+    padding-right: 2rem;
   }
 }
 
