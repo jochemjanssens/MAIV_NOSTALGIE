@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'KenFuture';
+  src:  url('kenvector_future.woff2') format('woff2'),
+        url('kenvector_future.woff') format('woff');
+}
